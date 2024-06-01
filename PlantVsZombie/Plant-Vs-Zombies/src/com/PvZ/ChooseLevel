@@ -1,0 +1,173 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import javafx.animation.FadeTransition;
+import javafx.application.Application;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.effect.ColorAdjust;
+import javafx.scene.effect.DropShadow;
+import javafx.scene.effect.SepiaTone;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+import javafx.stage.Stage;
+import javafx.util.Duration;
+
+public class ChooseLevel extends Application {
+
+    private Parent createContent() throws FileNotFoundException {
+        Pane root = new Pane();
+        ImageView imageView = new ImageView(new Image(new FileInputStream("cc.jpg")));
+        imageView.preserveRatioProperty();
+        imageView.setFitWidth(1500);
+        imageView.setFitHeight(915);
+        
+        ImageView selectlevel = new ImageView(new Image(new FileInputStream("selectLevel.png")));
+        selectlevel.setTranslateX(250);
+        selectlevel.setTranslateY(-200);
+        
+        
+        int x = 1;
+        
+        ColorAdjust dull = new ColorAdjust();
+        dull.setBrightness(0.2);
+        
+        
+        ImageView lev1 = new ImageView(new Image(new FileInputStream("level1.png")));
+        lev1.setTranslateX(-450+50);
+        lev1.setTranslateY(0+50);
+        
+        
+        lev1.setOnMouseEntered(e -> 
+        	lev1.setEffect(dull)
+        );
+        lev1.setOnMouseExited(e -> 
+        	lev1.setEffect(null)
+        );
+        lev1.setOnMouseClicked(e-> System.out.println("hh"));
+//        lev1.setEffect(new DropShadow(300,Color.RED));
+        
+        ImageView lev2 = new ImageView(new Image(new FileInputStream("level2.png")));
+        lev2.setTranslateX(-175+50);
+        lev2.setTranslateY(-40+50);
+        
+        lev2.setOnMouseEntered(e -> 
+        	lev2.setEffect(dull)
+        );
+        lev2.setOnMouseExited(e -> 
+        	lev2.setEffect(null)
+        );
+        lev2.setOnMouseClicked(e-> System.out.println("hh"));
+//        lev2.setEffect(new DropShadow(300,Color.RED));
+        lev2.setVisible(false);
+        
+        ImageView lev3 = new ImageView(new Image(new FileInputStream("level3.png")));
+        lev3.setTranslateX(10+50);
+        lev3.setTranslateY(10+50);
+        
+        lev3.setOnMouseEntered(e -> 
+        	lev3.setEffect(dull)
+        );
+        lev3.setOnMouseExited(e -> 
+        	lev3.setEffect(null)
+        );
+        lev3.setOnMouseClicked(e-> System.out.println("hh"));
+//        lev3.setEffect(new DropShadow(300,Color.RED));
+        lev3.setVisible(false);
+        
+        ImageView lev4 = new ImageView(new Image(new FileInputStream("level4.png")));
+        lev4.setTranslateX(240+50);
+        lev4.setTranslateY(-120+50);
+        
+        lev4.setOnMouseEntered(e -> 
+        	lev4.setEffect(dull)
+        );
+        lev4.setOnMouseExited(e -> 
+        	lev4.setEffect(null)
+        );
+        lev4.setOnMouseClicked(e-> System.out.println("hh"));
+//        lev4.setEffect(new DropShadow(300,Color.RED));
+        lev4.setVisible(false);
+        
+        ImageView lev5 = new ImageView(new Image(new FileInputStream("level5.png")));
+        lev5.setTranslateX(440+50);
+        lev5.setTranslateY(-110+50);
+        
+        lev5.setOnMouseEntered(e -> 
+        	lev5.setEffect(dull)
+        );
+        lev5.setOnMouseExited(e -> 
+        	lev5.setEffect(null)
+        );
+        lev5.setOnMouseClicked(e-> System.out.println("hh"));
+//        lev5.setEffect(new DropShadow(300,Color.RED));
+        lev5.setVisible(false);
+        
+        ImageView locked2 = new ImageView(new Image(new FileInputStream("locked.png")));
+        locked2.setTranslateX(lev2.getTranslateX()-40);
+        locked2.setTranslateY(lev2.getTranslateY()-28);
+        locked2.setEffect(new DropShadow(300,Color.BLACK));
+        
+        ImageView locked3 = new ImageView(new Image(new FileInputStream("locked.png")));
+        locked3.setTranslateX(lev3.getTranslateX()-15);
+        locked3.setTranslateY(lev3.getTranslateY()-80);
+        locked3.setEffect(new DropShadow(300,Color.BLACK));
+        
+        ImageView locked4 = new ImageView(new Image(new FileInputStream("locked.png")));
+        locked4.setTranslateX(lev4.getTranslateX()-32);
+        locked4.setTranslateY(lev4.getTranslateY()+50);
+        locked4.setEffect(new DropShadow(300,Color.BLACK));
+        
+        ImageView locked5 = new ImageView(new Image(new FileInputStream("locked.png")));
+        locked5.setTranslateX(lev5.getTranslateX()-20);
+        locked5.setTranslateY(lev5.getTranslateY()+47);
+        locked5.setEffect(new DropShadow(300,Color.BLACK));
+        
+        if(x==1){
+        	lev2.setVisible(true);
+        	locked2.setVisible(false);
+        }
+        else if(x==2){
+        	lev2.setVisible(true);
+        	locked2.setVisible(false);
+        	lev3.setVisible(true);
+        	locked3.setVisible(false);
+        }
+        else if(x==3){
+        	lev2.setVisible(true);
+        	locked2.setVisible(false);
+        	lev3.setVisible(true);
+        	locked3.setVisible(false);
+        	lev4.setVisible(true);
+        	locked4.setVisible(false);
+        }
+        else if(x>=4){
+        	lev2.setVisible(true);
+        	locked2.setVisible(false);
+        	lev3.setVisible(true);
+        	locked3.setVisible(false);
+        	lev4.setVisible(true);
+        	locked4.setVisible(false);
+        	lev5.setVisible(true);
+        	locked5.setVisible(false);
+        }
+        
+        root.getChildren().addAll(imageView,lev1,lev2,lev3,lev4,lev5,locked2,locked4,locked3,locked5,selectlevel);
+        return root;
+    }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        Scene scene = new Scene(createContent());
+        primaryStage.setTitle("Fallout4 Menu");
+        primaryStage.setScene(scene);
+//        primaryStage.setFullScreen(true);
+        primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+        <ImageView fx:id="background" fitHeight="768.0" fitWidth="1366.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="file:C:\myFolder\gameFile\backyard.jpg" />
+            </image></ImageView>
+        <ImageView fx:id="iv1" fitHeight="94.0" fitWidth="80.0" layoutX="24.0" layoutY="86.0" onDragDetected="#dragDet" onDragDone="#dragDone" pickOnBounds="true" smooth="false">
+            <image>
+                <Image url="file:C:\myFolder\gameFile\Peashooter.gif" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="box1" fitHeight="131.0" fitWidth="96.0" layoutX="355.0" layoutY="38.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box2" fitHeight="131.0" fitWidth="96.0" layoutX="345.0" layoutY="160.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box3" fitHeight="150.0" fitWidth="107.0" layoutX="345.0" layoutY="287.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box4" fitHeight="123.0" fitWidth="107.0" layoutX="334.0" layoutY="437.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box5" fitHeight="150.0" fitWidth="118.0" layoutX="323.0" layoutY="551.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box6" fitHeight="131.0" fitWidth="107.0" layoutX="451.0" layoutY="38.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box7" fitHeight="150.0" fitWidth="107.0" layoutX="451.0" layoutY="156.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box8" fitHeight="150.0" fitWidth="107.0" layoutX="451.0" layoutY="287.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box9" fitHeight="138.0" fitWidth="107.0" layoutX="451.0" layoutY="429.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box10" fitHeight="150.0" fitWidth="107.0" layoutX="451.0" layoutY="551.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box11" fitHeight="150.0" fitWidth="107.0" layoutX="558.0" layoutY="19.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box12" fitHeight="138.0" fitWidth="118.0" layoutX="547.0" layoutY="159.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box13" fitHeight="150.0" fitWidth="118.0" layoutX="546.0" layoutY="294.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box14" fitHeight="150.0" fitWidth="118.0" layoutX="558.0" layoutY="414.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box15" fitHeight="150.0" fitWidth="118.0" layoutX="558.0" layoutY="560.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box16" fitHeight="163.0" fitWidth="118.0" layoutX="665.0" layoutY="13.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box17" fitHeight="138.0" fitWidth="107.0" layoutX="671.0" layoutY="164.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box18" fitHeight="138.0" fitWidth="118.0" layoutX="665.0" layoutY="305.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box19" fitHeight="138.0" fitWidth="107.0" layoutX="671.0" layoutY="434.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box20" fitHeight="150.0" fitWidth="107.0" layoutX="671.0" layoutY="551.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box21" fitHeight="150.0" fitWidth="107.0" layoutX="778.0" layoutY="19.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box22" fitHeight="138.0" fitWidth="107.0" layoutX="778.0" layoutY="165.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="iv2" fitHeight="103.0" fitWidth="80.0" layoutX="21.0" layoutY="182.0" onDragDetected="#dragDet" onDragDone="#dragDone" pickOnBounds="true" smooth="false">
+            <image>
+                <Image url="file:C:\myFolder\gameFile\sunflower.gif" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="iv3" fitHeight="103.0" fitWidth="96.0" layoutX="23.0" layoutY="285.0" onDragDetected="#dragDet" onDragDone="#dragDone" pickOnBounds="true">
+            <image>
+                <Image url="file:C:\myFolder\gameFile\potatomine.gif" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="iv4" fitHeight="112.0" fitWidth="107.0" layoutX="10.0" layoutY="388.0" onDragDetected="#dragDet" onDragDone="#dragDone" pickOnBounds="true">
+            <image>
+                <Image url="file:C:\myFolder\gameFile\sunshroom.gif" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="iv5" fitHeight="123.0" fitWidth="107.0" layoutX="14.0" layoutY="474.0" onDragDetected="#dragDet" onDragDone="#dragDone" pickOnBounds="true">
+            <image>
+                <Image url="file:C:\myFolder\gameFile\WallnutPvZ2.gif" />
+            </image></ImageView>
+        <ImageView fx:id="box23" fitHeight="150.0" fitWidth="107.0" layoutX="778.0" layoutY="299.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box24" fitHeight="138.0" fitWidth="118.0" layoutX="773.0" layoutY="431.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box25" fitHeight="150.0" fitWidth="118.0" layoutX="773.0" layoutY="552.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box26" fitHeight="163.0" fitWidth="118.0" layoutX="880.0" layoutY="8.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box27" fitHeight="150.0" fitWidth="118.0" layoutX="885.0" layoutY="161.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box28" fitHeight="150.0" fitWidth="118.0" layoutX="885.0" layoutY="294.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box29" fitHeight="131.0" fitWidth="118.0" layoutX="885.0" layoutY="434.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box30" fitHeight="150.0" fitWidth="107.0" layoutX="891.0" layoutY="556.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box31" fitHeight="138.0" fitWidth="118.0" layoutX="986.0" layoutY="30.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box32" fitHeight="138.0" fitWidth="107.0" layoutX="998.0" layoutY="159.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box33" fitHeight="150.0" fitWidth="107.0" layoutX="998.0" layoutY="294.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box34" fitHeight="131.0" fitWidth="118.0" layoutX="986.0" layoutY="439.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box35" fitHeight="138.0" fitWidth="118.0" layoutX="986.0" layoutY="557.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box36" fitHeight="150.0" fitWidth="118.0" layoutX="1093.0" layoutY="27.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box37" fitHeight="131.0" fitWidth="128.0" layoutX="1082.0" layoutY="166.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box38" fitHeight="150.0" fitWidth="137.0" layoutX="1080.0" layoutY="301.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box39" fitHeight="123.0" fitWidth="128.0" layoutX="1092.0" layoutY="435.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box40" fitHeight="150.0" fitWidth="118.0" layoutX="1097.0" layoutY="552.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box41" fitHeight="150.0" fitWidth="128.0" layoutX="1199.0" layoutY="31.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box42" fitHeight="138.0" fitWidth="128.0" layoutX="1208.0" layoutY="167.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box43" fitHeight="150.0" fitWidth="118.0" layoutX="1213.0" layoutY="299.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box44" fitHeight="138.0" fitWidth="128.0" layoutX="1208.0" layoutY="426.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="box45" fitHeight="150.0" fitWidth="128.0" layoutX="1207.0" layoutY="551.0" onDragDropped="#dragDropped" onDragEntered="#dragEntered" onDragExited="#dragExited" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fitHeight="138.0" fitWidth="128.0" layoutX="1358.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="mower1" fitHeight="131.0" fitWidth="96.0" layoutX="259.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:C:\myFolder\gameFile\lawn_mower.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mower3" fitHeight="131.0" fitWidth="96.0" layoutX="249.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:C:\myFolder\gameFile\lawn_mower.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mower2" fitHeight="131.0" fitWidth="96.0" layoutX="259.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:C:\myFolder\gameFile\lawn_mower.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mower4" fitHeight="131.0" fitWidth="96.0" layoutX="238.0" layoutY="464.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:C:\myFolder\gameFile\lawn_mower.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mower5" fitHeight="131.0" fitWidth="96.0" layoutX="238.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:C:\myFolder\gameFile\lawn_mower.gif" />
+         </image>
+      </ImageView>
+      <Text fx:id="sunToken" fill="#99851e" layoutX="49.0" layoutY="711.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
